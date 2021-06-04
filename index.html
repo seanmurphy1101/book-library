@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Library</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+    </head>
+    <body>
+
+
+        <div class="header">
+            <div class="subheader">
+                <p>WELCOME TO YOUR VIRTUAL LIBRARY</p>
+                <p class="small">ENTER YOUR BOOK AND PRESS ADD TO UPDATE YOUR LIBRARY</p>
+            </div>
+        </div>
+        
+        <div class="container" id="catalogue">
+            <div class="title-wrap">
+                <label>Title</label>
+                <input class="title" id="inputT" onchange="setTitle()">
+            </div>
+            <div class="title-wrap">
+                <label>Author</label>
+                <input class="title" id="inputA" onchange="setAuthor()">
+            </div>
+            <div class="title-wrap">
+                <label>Pages</label>
+                <input class="title" id="inputP" type='number' onchange="setPages()">
+            </div>
+            <div class="title-wrap">
+                <label>Read</label>
+                <input class="title" id="inputR" type="checkbox" onchange="setRead()">
+            </div>
+            <div class="title-wrap">
+                <button class="button4" onclick="addBookToLibrary()">Add</button>
+            </div>
+        </div>
+        <script type="text/javascript" src="app.js"></script>
+    </body>
+</html>
