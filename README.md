@@ -1,0 +1,1 @@
+This project is a virtual library which accesses local storage to store data between sessions.
